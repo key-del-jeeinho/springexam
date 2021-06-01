@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
-</body>
+<!--configFragment 선언-->
+<th:block th:fragment="configFragment">
+
+
+    <!-- 이 영역에 공통 으로 사용할 css, js library 를 선언 한다. -->
+    <link rel="stylesheet" th:href="@{../static/css/content.css}">
+    <link rel="stylesheet" th:href="@{../static/css/footer.css}">
+    <link rel="stylesheet" th:href="@{../static/css/header.css}">
+    <link rel="stylesheet" th:href="@{../static/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{../static/css/page.css}">
+
+    <!-- Content Page 의 CSS fragment 삽입 -->
+    <th:block layout:fragment="css"/>
+
+    <!-- Content Page 의 script fragment 삽입 -->
+    <th:block layout:fragment="script"/>
+
+</th:block>
 </html>

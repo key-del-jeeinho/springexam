@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+<html lagn="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SpringShop</title>
+
+    <!-- config fragment 사용 -->
+    <th:block th:replace="fragment/config :: configFragment"/>
+</head>
+
+<body>
+<!-- header fragment 사용 -->
+<th:block th:replace="fragment/header :: headerFragment"/>
+
+<!--content fragment 사용
+    현재 layout 을 사용 하는 content fragment 의 내용을 삽입 한다.-->
+<th:block layout:fragment="content"/>
+
+<!-- footer fragment 사용 -->
+<th:block th:replace="fragment/footer :: footerFragment"> </th:block>
 </body>
+
 </html>
