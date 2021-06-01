@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringShop</title>
+
+    <link rel="stylesheet" href="../../static/css/content.css">
+    <link rel="stylesheet" href="../../static/css/header.css">
+    <link rel="stylesheet" href="../../static/css/navbar.css">
+    <link rel="stylesheet" href="../../static/css/page.css">
+    <link rel="stylesheet" href="../../static/css/footer.css">
+</head>
+<body>
+<header th:fragment="headerFragment">
+    <h1>봄날의 마법상점 Spring Shop</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="/shop/hit-product">히트상품</a></li>
+        <li><a href="/shop/product-list">상품목록</a></li>
+        <li><a href="/login">로그인</a></li>
+        <li><a href="/sign-up">회원가입</a></li>
+    </ul>
+</nav>
+
+<section id="content_main">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+    Nam libero justo laoreet sit. Amet aliquam id diam maecenas ultricies mi eget mauris. <br>
+    Vitae justo eget magna fermentum. Diam vel quam elementum pulvinar etiam non quam lacus.<br>
+    Aliquam etiam erat velit scelerisque in. Ridiculus mus mauris vitae ultricies leo integer malesuada. <br>
+    Massa tincidunt dui ut ornare. Egestas sed sed risus pretium quam vulputate dignissim. <br>
+    Cras adipiscing enim eu turpis egestas pretium. <br>
+
+    Scelerisque in dictum non consectetur a erat nam at lectus. <br>
+    Sit amet nulla facilisi morbi tempus. Accumsan sit amet nulla facilisi. <br>
+    Aliquam purus sit amet luctus. Egestas sed tempus urna et pharetra pharetra massa massa. <br>
+    Elementum curabitur vitae nunc sed velit dignissim. Velit sed ullamcorper morbi <br>
+    tincidunt ornare massa.
+</section>
+
+<footer th:fragment="footerFragment">
+    copyright all rights reserved
+</footer>
+
+</body>
+</html>

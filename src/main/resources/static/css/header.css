@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+
+h1 {
+    color: rebeccapurple;
+    background: lightseagreen;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

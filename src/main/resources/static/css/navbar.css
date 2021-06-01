@@ -1,0 +1,29 @@
+nav{
+    background: rebeccapurple;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+    float: left;
+
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li, li>a, li>a:link, li>a:active{
+    text-decoration: none;
+    color: wheat;
+}
+
+li:hover {
+    background-color: purple;
+    color: #222;
+}
